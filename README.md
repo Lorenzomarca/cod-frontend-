@@ -10,29 +10,14 @@ Aqui você encontrará todas as atividades práticas, desafios de código e pequ
 
 ---
 
+
+
 ## 🛠️ Tecnologias e Ferramentas
 
-Durante as aulas, praticamos e aplicamos as seguintes tecnologias:
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 
-- **HTML5**: Estruturação semântica de páginas web.
-- **CSS3**: Estilização, layouts responsivos, Flexbox e CSS Grid.
-- **JavaScript (ES6+)**: Lógica de programação, manipulação de DOM e eventos.
-- **Git & GitHub**: Versionamento de código e organização do fluxo de trabalho.
-- **VS Code**: Editor de código principal.
-
----
-
-## 📁 Estrutura de Pastas
-
-O repositório está organizado de forma simples e modular para facilitar a navegação:
-
-```text
-.
-├── 📁 modulo-01-html-css/
-│   ├── 📁 exercicio-01-tags-estruturais/
-│   └── 📁 exercicio-02-flexbox/
-├── 📁 modulo-02-javascript/
-│   ├── 📁 exercicio-01-funcoes/
-│   └── 📁 exercicio-02-manipulacao-dom/
-├── 📁 projetos-integradores/
-└── README.md
