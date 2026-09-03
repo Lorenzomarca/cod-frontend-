@@ -1,6 +1,6 @@
 # 💻 Exercícios de Front-End — SENAI Florianópolis
 
-Este repositório foi criado para armazenar, organizar e registrar minha evolução durante as aulas de **Desenvolvimento Front-End** no **SENAI Florianópolis**, ministradas pelo(a) professor(a) mais fofo(a) do campus! 🌸✨
+Este repositório foi criado para armazenar, organizar e registrar minha evolução durante as aulas de **Desenvolvimento Front-End** no **SENAI Florianópolis**
 
 ---
 
