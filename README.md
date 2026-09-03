@@ -41,8 +41,11 @@ Aqui você encontrará todas as atividades práticas, desafios de código e pequ
       <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg" alt="vscode" width="60" height="60"/>
       <br>VSCode
     </td>
+
+<td align="center">
+      <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="react" width="60" height="60"/>
+      <br>React
+    </td>
   </tr>
 </table>
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-
 ---
