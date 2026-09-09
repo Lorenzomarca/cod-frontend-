@@ -12,6 +12,7 @@ Aqui você encontrará todas as atividades práticas, desafios de código e pequ
 
 
 
+
 ## 🛠️ Tecnologias e Ferramentas
 
 <table>
