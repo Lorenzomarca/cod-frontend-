@@ -27,7 +27,7 @@ button {
     0px 5px 5px -1px rgba(58, 125, 233, 0.25),
     inset 4px 4px 8px rgba(175, 230, 255, 0.5),
     inset -4px -4px 8px rgba(19, 95, 216, 0.35);
-    margin: 10px;
+  margin: 10px;
 }
 
 button:hover {
@@ -45,7 +45,6 @@ button:is(:focus, :focus-visible, :active) {
   button{
     transition: linear;
   }
-
 }
 
 body {
@@ -57,11 +56,43 @@ body {
   font-family: system-ui, sans-serif;
   background-color: #000000;
 }
+
 h1 {
   color: #ffffff;
   text-align: center;
 }
+
 h2 {
   color: #ffffff;
   text-align: center;
+}
+
+/* Garante que o container tenha um contexto de camadas */
+.cont-app {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Força os botões, títulos e divisores a ficarem na frente da imagem */
+.cont-app h1,
+.cont-app h2,
+.cont-app button,
+.cont-app hr {
+  position: relative;
+  z-index: 2;
+}
+
+/* Estilo da imagem de fundo */
+.bg-secret {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: 1;
+  pointer-events: none;
 }
