@@ -67,14 +67,29 @@ h2 {
   text-align: center;
 }
 
-/* Garante que o container tenha um contexto de camadas */
+/* Garante que o conteúdo fique acima do fundo */
 .cont-app {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
+/* Enquadramento da imagem de fundo */
+.bg-secret {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vh;
+  object-fit: contain; /* Mantém as proporções e enquadra a imagem inteira sem cortar */
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.65; /* Opacidade para não ofuscar o texto e os botões */
+}
+
 
 /* Força os botões, títulos e divisores a ficarem na frente da imagem */
 .cont-app h1,
@@ -83,16 +98,4 @@ h2 {
 .cont-app hr {
   position: relative;
   z-index: 2;
-}
-
-/* Estilo da imagem de fundo */
-.bg-secret {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  object-fit: cover;
-  z-index: 1;
-  pointer-events: none;
 }
