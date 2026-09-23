@@ -9,7 +9,7 @@ function Header() {
           src="https://static.wikia.nocookie.net/bluelock/images/b/b0/Real_Madrid.PNG/revision/latest?cb=20240122040731&path-prefix=es"
           alt=""
         />
-        <span>Studio Alfa</span>
+        <span>Studio Luna</span>
       </div>
       <nav>
         <ul className="navigation">
