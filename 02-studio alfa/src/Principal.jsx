@@ -11,8 +11,8 @@ function Principal() {
       </p>
 
       <div className="botoes">
-        <button className="btn-orçamento">Peça um orçamento</button>
-        <button className="btn-portifolio">Ver portifolio</button>
+        <a href="#orcamento" className="btn-orçamento">Peça um orçamento</a>
+        <a href="#portifolio" className="btn-portifolio">Ver portifolio</a>
       </div>
       </section>
       <section className="section-2">

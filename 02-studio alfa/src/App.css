@@ -33,6 +33,7 @@ header {
   gap: 10px;
   font-weight: 700;
   font-size: 1.1rem;
+  user-select: none;
 }
 
 .logoS {
@@ -90,9 +91,9 @@ header {
   margin-top: 28px;
 }
 
-.botoes button {
+.botoes a {
   padding: 10px 20px;
-  border-radius: 8px;
+  border-radius: 10rem;
   font-size: 0.95rem;
   font-weight: 500;
   font-family: inherit;
@@ -107,10 +108,12 @@ background-color: var(--cor-botao);
   border: 1px solid var(--cor-botao);
   padding: 8px 16px;
   font-size: 0.875rem;
+  text-decoration: none;
 }
 
 .btn-orçamento:hover {
-  opacity: 0.9;
+ transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 rgb(161, 159, 159);
 }
 
 
@@ -118,10 +121,11 @@ background-color: var(--cor-botao);
   background-color: transparent;
   color: #000;
   border: 1px solid #d1d5db;
+  text-decoration: none;
 }
 
 .btn-portifolio:hover {
-  background-color: #f9fafb;
-  border-color: #9ca3af;
+ transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 black;
 }
 
