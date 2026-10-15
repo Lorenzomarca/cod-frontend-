@@ -1,0 +1,72 @@
+/* Reset básico e fundo escuro (obrigatório para o efeito do botão funcionar) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #212121;
+  color: #ffffff;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container Principal (.app) */
+.app {
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Estilização dos Botões */
+.app button {
+  --hover-shadows: 16px 16px 33px #121212, -16px -16px 33px #303030;
+  --accent: fuchsia;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  border: none;
+  border-radius: 1.1em;
+  background-color: #212121;
+  cursor: pointer;
+  color: white;
+  padding: 0.8em 1.4em;
+  margin-right: 0.8rem;
+  margin-bottom: 1rem;
+  transition: box-shadow ease-in-out 0.3s, background-color ease-in-out 0.1s,
+    letter-spacing ease-in-out 0.1s, transform ease-in-out 0.1s;
+  box-shadow: 13px 13px 10px #1c1c1c, -13px -13px 10px #262626;
+}
+
+.app button:hover {
+  box-shadow: var(--hover-shadows);
+}
+
+.app button:active,
+.app button.active {
+  box-shadow: var(--hover-shadows), var(--accent) 0px 0px 30px 5px;
+  background-color: var(--accent);
+  transform: scale(0.95);
+}
+
+/* Título */
+.app h1 {
+  font-size: 2.2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+/* Estilo do container que envolve o texto dos componentes das orações */
+.app p,
+.app > div:not(.app) {
+  line-height: 1.8;
+  font-size: 1.1rem;
+  color: #d1d1d1;
+  background-color: #212121;
+  padding: 1.8rem;
+  border-radius: 1.2em;
+  box-shadow: inset 6px 6px 12px #181818, inset -6px -6px 12px #2a2a2a;
+}
