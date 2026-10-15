@@ -11,6 +11,8 @@ import Sarumano from './components/Sarumano'
 import Viagem from './components/Viagem'
 import Som from './components/Som'
 import Denys from './components/Denys'
+import Cracha from './components/Cracha'
+import Visitante from './components/Visitante'
 
 function App() {
 
@@ -19,6 +21,8 @@ function App() {
     <h1>04 estados e componentes</h1>
    
    <h2>#0030</h2>
+   <Visitante/>
+   <Cracha/>
    <Denys/> 
     <Som/>
     <Viagem/>
