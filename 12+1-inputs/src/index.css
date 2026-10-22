@@ -1,13 +1,212 @@
-.app, .home, .demo{
+/* =========================================
+   ULTRA PREMIUM — APP / HOME / DEMO
+   ========================================= */
+
+.app,
+.home,
+.demo, 
+.ex0081,
+.ho
+       {
+  /* Layout */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 5px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  gap: 24px;
+
+  /* Dimensões */
+  width: 100%;
+  min-height: 100vh;
+  padding: clamp(20px, 5vw, 80px);
+  box-sizing: border-box;
+
+  /* Tipografia */
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: clamp(16px, 1.2vw, 20px);
+  line-height: 1.6;
+  letter-spacing: 0.4px;
+  text-align: center;
+
+  /* Cores */
+  color: #f5f5f7;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(125, 125, 150, 0.16),
+      transparent 55%
+    ),
+    linear-gradient(145deg, #050506 0%, #101014 45%, #080809 100%);
+
+  /* Acabamento */
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
 }
 
+/* Textura luminosa de fundo */
+.app::before,
+.home::before,
+.demo::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
 
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.025) 1px,
+      transparent 1px
+    );
+
+  background-size: 45px 45px;
+
+  mask-image: linear-gradient(
+    to bottom,
+    black,
+    transparent 85%
+  );
+}
+
+/* Títulos de impacto */
+.app h1,
+.home h1,
+.demo h1 {
+  margin: 0;
+  font-size: clamp(2.5rem, 6vw, 5.5rem);
+  font-weight: 900;
+  line-height: 1.05;
+  letter-spacing: -2px;
+
+  background: linear-gradient(
+    135deg,
+    #ffffff 10%,
+    #d9dbe0 45%,
+    #85858f 100%
+  );
+
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  filter: drop-shadow(0 0 25px rgba(220, 220, 255, 0.12));
+}
+
+/* Textos */
+.app p,
+.home p,
+.demo p {
+  max-width: 680px;
+  margin: 0;
+  color: #a6a6b0;
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  line-height: 1.8;
+}
+
+/* Botões premium */
+.app button,
+.home button,
+.demo button {
+  position: relative;
+  padding: 15px 32px;
+
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+
+  color: #09090a;
+  background: linear-gradient(135deg, #ffffff, #c5c7ce);
+
+  font: inherit;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.8);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    background 0.3s ease;
+}
+
+.app button:hover,
+.home button:hover,
+.demo button:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  box-shadow:
+    0 16px 45px rgba(210, 210, 235, 0.16),
+    0 0 25px rgba(255, 255, 255, 0.08);
+}
+
+.app button:active,
+.home button:active,
+.demo button:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* Campos de formulário */
+.app input,
+.home input,
+.demo input {
+  width: min(100%, 380px);
+  padding: 15px 18px;
+  box-sizing: border-box;
+
+  color: #ffffff;
+  background: rgba(255, 255, 255, 0.045);
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  outline: none;
+
+  font: inherit;
+
+  transition:
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.app input:focus,
+.home input:focus,
+.demo input:focus {
+  border-color: #d9dbe0;
+  background: rgba(255, 255, 255, 0.075);
+
+  box-shadow:
+    0 0 0 4px rgba(217, 219, 224, 0.08),
+    0 0 25px rgba(217, 219, 224, 0.06);
+}
+
+/* Seleção de texto */
+.app ::selection,
+.home ::selection,
+.demo ::selection {
+  color: #09090a;
+  background: #d9dbe0;
+}
+
+/* Acessibilidade: respeita quem reduz animações */
+@media (prefers-reduced-motion: reduce) {
+  .app *,
+  .home *,
+  .demo * {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
 
 :root {
   --text: #6b6375;
